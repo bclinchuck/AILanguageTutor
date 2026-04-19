@@ -39,7 +39,7 @@ export const LessonList: React.FC<LessonListProps> = ({
           return (
             <div
               key={lesson.id}
-              className={`lesson-card ${lessonCompleted ? 'completed' : ''}`}
+              className={`lesson-card ${(lessonCompleted || quizCompleted) ? 'completed' : ''}`}
               onClick={() => onSelectLesson(lesson)}
             >
               <div className="lesson-header">
