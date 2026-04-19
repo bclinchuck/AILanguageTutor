@@ -1,0 +1,19 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Language Learning Icon</title>
+  <desc id="desc">A chat bubble and book representing language learning</desc>
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b5fff"/>
+      <stop offset="100%" stop-color="#003a8c"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="24" fill="url(#bgGradient)"/>
+  <path d="M32 40h40c6.627 0 12 5.373 12 12v8c0 6.627-5.373 12-12 12H52l-10 10-2-10H32c-6.627 0-12-5.373-12-12v-8c0-6.627 5.373-12 12-12z"
+        fill="white" opacity="0.95"/>
+  <path d="M76 44h20c5.523 0 10 4.477 10 10v22c0 5.523-4.477 10-10 10h-6l-4 8-4-8h-6c-5.523 0-10-4.477-10-10v-4"
+        fill="white" opacity="0.9"/>
+  <text x="42" y="62" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="16" font-weight="700" fill="#0b5fff">Aa</text>
+  <text x="84" y="78" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="14" font-weight="700" fill="#0b5fff">文</text>
+</svg>

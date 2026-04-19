@@ -1,0 +1,112 @@
+.language-selector {
+  min-height: calc(100vh - 3rem - var(--safe-top));
+  min-height: calc(100dvh - 3rem - var(--safe-top));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  padding-top: max(2.5rem, calc(var(--safe-top) + 1.25rem));
+}
+
+.app-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.app-icon {
+  width: 2.6rem;
+  height: 2.6rem;
+  filter: drop-shadow(0 6px 12px rgba(8, 145, 178, 0.22));
+}
+
+[data-theme='dark'] .app-icon {
+  filter: drop-shadow(0 4px 10px rgba(56, 189, 248, 0.2));
+}
+
+.app-title {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  color: var(--text-heading);
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.app-subtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2.1rem;
+  text-align: center;
+}
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 210px));
+  gap: 1.1rem;
+  max-width: 900px;
+  width: 100%;
+  justify-content: center;
+}
+
+.language-card {
+  background: var(--surface-raised);
+  border: 1px solid var(--border-soft);
+  border-radius: 20px;
+  padding: 1.5rem 1.2rem;
+  min-height: 118px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  color: inherit;
+}
+
+.language-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-floating);
+}
+
+.language-card:active {
+  transform: translateY(-2px);
+}
+
+.language-flag {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--accent-mint-from);
+}
+
+.language-name {
+  font-size: 1.22rem;
+  font-weight: 600;
+  color: var(--text-heading);
+}
+
+@media (max-width: 430px) {
+  .language-grid {
+    grid-template-columns: 1fr 1fr;
+    max-width: none;
+  }
+
+  .language-card {
+    min-height: 120px;
+    padding: 1.25rem 0.9rem;
+  }
+
+  .language-flag {
+    font-size: 2.25rem;
+  }
+
+  .language-name {
+    font-size: 1.05rem;
+  }
+}
