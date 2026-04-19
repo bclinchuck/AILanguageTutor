@@ -137,8 +137,8 @@ const rawLessons: Record<string, Lesson[]> = {
       id: 'es-numbers-1',
       topicId: 'numbers',
       level: 'Intermediate',
-      title: 'Numbers 1-20',
-      content: 'Learn to count from 1 to 20 in Spanish.',
+      title: 'Numbers 1-10',
+      content: 'Learn to count from 1 to 10 in Spanish.',
       vocabulary: ['uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve', 'diez'],
     },
     {
@@ -177,8 +177,8 @@ const rawLessons: Record<string, Lesson[]> = {
       id: 'de-numbers-1',
       topicId: 'numbers',
       level: 'Novice',
-      title: 'Numbers 1-20',
-      content: 'Learn to count from 1 to 20 in German.',
+      title: 'Numbers 1-10',
+      content: 'Learn to count from 1 to 10 in German.',
       vocabulary: ['eins', 'zwei', 'drei', 'vier', 'fünf', 'sechs', 'sieben', 'acht', 'neun', 'zehn'],
     },
     {
@@ -1193,7 +1193,7 @@ const LEVEL_LESSON_TEMPLATES: Record<string, { title: string; content: string }[
     { title: 'Common Phrases', content: 'Learn everyday phrases for basic conversation.' },
   ],
   Intermediate: [
-    { title: 'Numbers 1-20', content: 'Learn to count from 1 to 20.' },
+    { title: 'Numbers 1-10', content: 'Learn to count from 1 to 10.' },
     { title: 'Days of the Week', content: 'Learn the days of the week.' },
     { title: 'Colors', content: 'Learn basic color vocabulary.' },
     { title: 'Family Members', content: 'Learn words for family members.' },
@@ -1278,7 +1278,7 @@ const LESSON_VOCAB_ITEMS: Record<string, VocabItem[]> = {
     { en: 'thank you', es: 'Gracias', de: 'Danke', fr: 'Merci', it: 'Grazie', pt: 'Obrigado', nl: 'Dank je', ru: 'Спасибо', zh: '谢谢', ja: 'ありがとう', ko: '감사합니다' },
     { en: 'excuse me', es: 'Disculpe', de: 'Entschuldigung', fr: 'Excusez-moi', it: 'Scusi', pt: 'Com licença', nl: 'Sorry', ru: 'Извините', zh: '不好意思', ja: 'すみません', ko: '실례합니다' },
   ],
-  'Numbers 1-20': [
+  'Numbers 1-10': [
     { en: 'one', es: 'uno', de: 'eins', fr: 'un', it: 'uno', pt: 'um', nl: 'een', ru: 'один', zh: '一', ja: '一', ko: '일', sv: 'ett', no: 'en', da: 'en', fi: 'yksi', pl: 'jeden', tr: 'bir', el: 'ένα', ar: 'واحد', he: 'אחד', hi: 'एक', vi: 'một', th: 'หนึ่ง', id: 'satu' },
     { en: 'two', es: 'dos', de: 'zwei', fr: 'deux', it: 'due', pt: 'dois', nl: 'twee', ru: 'два', zh: '二', ja: '二', ko: '이', sv: 'två', no: 'to', da: 'to', fi: 'kaksi', pl: 'dwa', tr: 'iki', el: 'δύο', ar: 'اثنان', he: 'שניים', hi: 'दो', vi: 'hai', th: 'สอง', id: 'dua' },
     { en: 'three', es: 'tres', de: 'drei', fr: 'trois', it: 'tre', pt: 'três', nl: 'drie', ru: 'три', zh: '三', ja: '三', ko: '삼', sv: 'tre', no: 'tre', da: 'tre', fi: 'kolme', pl: 'trzy', tr: 'üç', el: 'τρία', ar: 'ثلاثة', he: 'שלושה', hi: 'तीन', vi: 'ba', th: 'สาม', id: 'tiga' },
@@ -1440,7 +1440,7 @@ export const LESSON_PROMPTS: Record<string, string[]> = {
   'Saying Goodbye': ['see you later', 'see you tomorrow', 'goodbye', 'take care'],
   'Asking How Someone Is': ["how are you?", "i'm fine", 'and you?'],
   'Common Phrases': ['yes', 'no', 'please', 'thank you', 'excuse me'],
-  'Numbers 1-20': ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'],
+  'Numbers 1-10': ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'],
   'Days of the Week': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
   'Colors': ['red', 'blue', 'green', 'yellow', 'black'],
   'Family Members': ['mother', 'father', 'sister', 'brother', 'family'],
